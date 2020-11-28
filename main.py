@@ -1,9 +1,6 @@
 from flask import Flask, request, redirect
 from url_shortener import id_gen
-import os
-import pwd
-import string
-import random
+
 app = Flask(__name__)
 
 
