@@ -18,4 +18,4 @@ def get_url():
 @app.route('/search')
 def redirect_key():
     key = request.args.get('key', '')
-    return redirect(""+links[key])
+    return redirect(str(links[key]))
