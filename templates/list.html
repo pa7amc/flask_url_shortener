@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html"%}
+{%block title %} Home {%endblock%}
+{%block content%}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List of links</title>
+<h2>List of links </h2>
+{% for link in links %}
+<h2>{{link}} : {{links[link]}}</h2>
+{% endfor %}
 
-</head>
-
-<body>
-    <h2>List of links - {{ author }} </h2>
-    {% for link in links %}
-    <h2>{{link}} : {{links[link]}}</h2>
-    {% endfor %}
-</body>
-
-</html>
+{%endblock%}

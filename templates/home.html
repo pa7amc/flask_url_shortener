@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html"%}
+{%block title %} Home {%endblock%}
+{%block content%}
+<form action="#" method="post">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEUP - Serviço de Encurtamento de URLs da Pat</title>
-</head>
+    <p>Enter an URL:</label><br>
+        <input type="url" id="url" name="url" placeholder="ex: https://github.com/"></p>
+    <p><input type="submit" value="submit"></p>
 
-<body>
-    <form action="/action_page.php">
-        <label for="phone">Enter an URL:</label><br><br>
-        <input type="url" id="url" name="url" placeholder="ex: https://github.com/" pattern="URL"><br><br>
-        <input type="submit">
-    </form>
-
-</body>
-
-</html>
+</form>{%endblock%}
