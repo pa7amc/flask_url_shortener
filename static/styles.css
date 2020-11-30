@@ -1,0 +1,36 @@
+body {
+    background-color: #D2D5E4;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+
+        
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
+#cont {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.bgpic{
+    border-radius: 1%;
+
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #51525c;
+    color: rgb(229, 236, 250);
+    text-align: center;
+}
+
+h1 {
+    color: #4f4f57;
+}
