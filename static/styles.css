@@ -9,15 +9,18 @@ body {
 }
 
 
-#cont {
+#content_base{
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    padding: 1rem;
+    padding: 5rem;
     margin: 1rem;
+    
 }
 
 .bgpic{
     border-radius: 1%;
+
+
 
 }
 
@@ -31,6 +34,15 @@ body {
     text-align: center;
 }
 
+header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: #51525c;
+        text-align: center;
+}
+
 h1 {
-    color: #4f4f57;
+    color: #e9e9fc;
 }

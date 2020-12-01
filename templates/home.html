@@ -1,18 +1,27 @@
 {% extends "base.html"%}
 {%block title %} Home sus {%endblock%}
 {%block content%}
-<section id="cont">
 
-    <img class="bgpic" src="{{ url_for('static', filename = 'imgs/SUSP.png') }}" alt="logo" />
 
-    <br><br>
+<main>
 
-    <form action="#" method="post">
+    <section id="body_content">
 
-        <p>Enter an URL:</label><br>
-            <input type="url" id="url" name="url" placeholder="ex: https://github.com/"></p>
-        <p><input type="submit" value="Submit"></p>
+        <div class="cont">
+            <img class="bgpic" src="{{ url_for('static', filename = 'imgs/SUSP.png') }}" alt="logo" />
 
-    </form>
-</section>
+            <br><br>
+
+            <form action="#" method="post">
+
+                <p>Enter an URL:</label><br>
+                    <input type="url" id="url" name="url" placeholder="ex: https://github.com/"></p>
+                <p><input type="submit" value="Submit"></p>
+
+            </form>
+        </div>
+    </section>
+
+</main>
+
 {%endblock%}
