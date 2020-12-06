@@ -3,25 +3,20 @@
 {%block content%}
 
 
-<main>
 
-    <section id="body_content">
 
-        <div class="cont">
-            <img class="bgpic" src="{{ url_for('static', filename = 'imgs/SUSP.png') }}" alt="logo" />
+<div class="cont">
 
-            <br><br>
+    <br><br>
 
-            <form action="#" method="post">
+    <form action="/add" method="post">
 
-                <p>Enter an URL:</label><br>
-                    <input type="url" id="url" name="url" placeholder="ex: https://github.com/"></p>
-                <p><input type="submit" value="Submit"></p>
+        <p>Enter an URL:</p>
+        <input type="url" id="url" name="url" required="required" placeholder="ex: https://github.com/">
+        <input type="submit" value="Submit">
 
-            </form>
-        </div>
-    </section>
+    </form>
+</div>
 
-</main>
 
 {%endblock%}

@@ -18,6 +18,8 @@ body {
 }
 
 .bgpic{
+    padding-top: 7rem;
+    padding-bottom: 3rem;
     border-radius: 1%;
 
 
@@ -29,20 +31,52 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #51525c;
+    background-color: #62636d;
     color: rgb(229, 236, 250);
     text-align: center;
 }
 
 header {
+
         position: fixed;
         left: 0;
         top: 0;
         width: 100%;
-        background-color: #51525c;
+        background-color: #62636d;
         text-align: center;
 }
 
+
 h1 {
     color: #e9e9fc;
+}
+
+ h2, h3, h4 {
+    color: #62636d;
+}
+
+a{
+    color: #62636d;
+}
+
+.key_p {
+    font-weight: 200%;
+    color: #62636d;
+}
+
+.back {
+    font-weight: 200%;
+    padding-bottom: 1rem;
+    color: #b96eff;
+}
+
+p{
+    color: #62636d;
+}
+
+#foot_h4 {
+    color: #62636d;
+}
+.href_header {
+    color: #b96eff;
 }
