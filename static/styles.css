@@ -22,8 +22,14 @@ body {
     padding-bottom: 3rem;
     border-radius: 1%;
 
+}
 
 
+.back_but {
+    font-size: 200%; position: fixed; text-align: center;
+    
+    color: #b96eff;
+    font-size: 200%;
 }
 
 #footer {
@@ -31,7 +37,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #62636d;
+    background-color: #656674;
     color: rgb(229, 236, 250);
     text-align: center;
 }
@@ -42,7 +48,7 @@ header {
         left: 0;
         top: 0;
         width: 100%;
-        background-color: #62636d;
+        background-color: #656674;
         text-align: center;
 }
 
@@ -56,27 +62,35 @@ h1 {
 }
 
 a{
-    color: #62636d;
+    color: #ff65e5;
+}
+
+a:hover{
+    
+    color: #e9e9fc;
 }
 
 .key_p {
-    font-weight: 200%;
-    color: #62636d;
+    font-size: 150%;
+    color: #9a28c7;
 }
 
-.back {
-    font-weight: 200%;
-    padding-bottom: 1rem;
-    color: #b96eff;
-}
+
 
 p{
+    font-size: 125%;
     color: #62636d;
 }
 
 #foot_h4 {
-    color: #62636d;
+    color: #e9e9fc;
 }
 .href_header {
-    color: #b96eff;
+    color: #e9e9fc;
+    text-align: center;
+    
+}
+
+.list_links{
+    color: #9a28c7;
 }

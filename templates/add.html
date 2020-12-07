@@ -2,9 +2,20 @@
 {%block title %} URL Shortened {%endblock%}
 {%block content%}
 
-<p>Your URL got shortened successfully! {{url}} 's key: </p>
+<p>Your URL got shortened successfully!</p>
+<p> <b>{{url}} 's key:</b> </p>
 
-<p class="key_p">{{key}} </p>
+<p class="key_p"> <strong>{{key}} </strong></p>
 
-<p class="back"><a href="/">Back to home</a></p>
+
+{%endblock%}
+
+{%block back%}
+<section id="back_but_add">
+        <p class="back_but" style="font-size: 120%; 
+bottom: 3rem; 
+display: flex; justify-content: center;  left:50% "><b><a href="/">back
+                        </a></b>
+        </p>
+</section>
 {%endblock%}
