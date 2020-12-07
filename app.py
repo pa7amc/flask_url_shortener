@@ -13,7 +13,7 @@ def id_gen(size=6, chars=string.ascii_letters + string.digits):
 links = {}
 
 
-@app.route('/add', methods=['GET', 'POST'])
+@app.route('/add', methods=['POST'])
 def get_url():
     url = request.form.get('url', '')
     key = id_gen()
@@ -26,17 +26,12 @@ def redirect_key(id):
     return redirect(str(links[id]))
 
 
-# @app.route('/listt', methods=['GET'])
-# def get_links():
-    #   return links
-
-
 @app.route('/list')
 def get_links():
     return render_template('list.html', links=links)
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET'])
 def home():
 
     return render_template('home.html')
