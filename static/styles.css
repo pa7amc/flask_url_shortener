@@ -1,3 +1,8 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+
 body {
     background-color: #D2D5E4;
     margin: 0;
@@ -5,11 +10,14 @@ body {
 
         
     padding: 1rem;
-    margin: 1rem;
 }
 
+main {
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
 
-#content_base{
+#cont{
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     padding: 5rem;
@@ -17,22 +25,33 @@ body {
     
 }
 
-.bgpic{
-    padding-top: 7rem;
-    padding-bottom: 3rem;
-    border-radius: 1%;
+#pic{
+    padding-top: 4.5rem;
+    padding-bottom: 2rem;
+    margin: 4.5rem;
 
 }
 
 
-.back_but {
-    font-size: 200%; position: fixed; text-align: center;
-    
-    color: #b96eff;
-    font-size: 200%;
+.url {
+    padding: 0.15rem;
+    border-radius: 0.5rem;
+    margin: 0.6rem;
 }
 
-#footer {
+.sub {
+    border-radius: 0.5rem;
+    margin: 2rem;
+}
+
+.success {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+}
+
+
+
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -40,6 +59,7 @@ body {
     background-color: #656674;
     color: rgb(229, 236, 250);
     text-align: center;
+    font-size: 150%;
 }
 
 header {
@@ -71,8 +91,8 @@ a:hover{
 }
 
 .key_p {
-    font-size: 150%;
-    color: #9a28c7;
+    font-size: 140%;
+    color: #ae35df;
 }
 
 
@@ -82,15 +102,23 @@ p{
     color: #62636d;
 }
 
-#foot_h4 {
-    color: #e9e9fc;
-}
-.href_header {
-    color: #e9e9fc;
-    text-align: center;
-    
-}
+
 
 .list_links{
     color: #9a28c7;
+    padding-bottom: 2rem;
+}
+
+.header_links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home_h {
+    padding: 1.5rem;
+}
+
+.links_h {
+    padding: 1.5rem;
 }

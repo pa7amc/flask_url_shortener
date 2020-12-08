@@ -1,22 +1,18 @@
-{% extends "base.html"%}
-{%block title %} Home sus {%endblock%}
+{% extends "base2.html"%}
+{%block title %} Home - sus. - some URL shortener {%endblock%}
 {%block content%}
 
 
 
 
-<div class="cont">
+<form action="/add" method="post">
 
-    <br /><br />
+    <p>Enter an URL</p>
+    <input type="url" id="url" name="url" required="required" class="url" placeholder="ex: https://github.com/">
+    <input type="submit" class="sub" value="Submit">
 
-    <form action="/add" method="post">
+</form>
 
-        <p>Enter an URL:</p>
-        <input type="url" id="url" name="url" required="required" placeholder="ex: https://github.com/">
-        <input type="submit" value="Submit">
-
-    </form>
-</div>
 
 
 {%endblock%}

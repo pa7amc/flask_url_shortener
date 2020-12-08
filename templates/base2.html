@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'styles.css') }}">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %} {%endblock%}</title>
+</head>
+
+<body>
+
+
+    <div id="cont">
+
+        <header>
+            <h1>sus. - some URL shortener </h1>
+            <section class="header_links">
+                <h4><a href="/" class="home_h">home</a> <a href="/list" class="links_h">links</a>
+                    <h4 />
+
+            </section>
+
+
+        </header>
+
+
+
+        <main>
+
+            <section id="pic">
+                <img class="bgpic" src="{{ url_for('static', filename = 'imgs/SUSP.png') }}" alt="logo" />
+            </section>
+
+
+            <section id="folia">
+                <!-- folia from initial FOrm, LIst of links and Adding a url-->
+
+                {%block content%} {%endblock%}
+
+
+
+
+            </section>
+
+            {%block back%} {%endblock%}
+
+
+        </main>
+
+    </div>
+
+    <footer>
+        <a href="https://pa7amc.github.io/" class="mypage">
+            my page</a>
+    </footer>
+
+
+</body>
+
+</html>

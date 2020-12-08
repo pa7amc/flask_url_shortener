@@ -1,20 +1,12 @@
-{% extends "base.html"%}
-{%block title %} Home {%endblock%}
+{% extends "base2.html"%}
+{%block title %} list of links {%endblock%}
+
+
 {%block content%}
 
-<h2 class="list_links">list of links </h2> <br />
+<h2 class="list_links">list of links </h2>
 {% for link in links %}
 <p><b>{{link}}</b> ➡️ {{links[link]}}</p>
 {% endfor %}
 
-{%endblock%}
-
-
-{%block back%}
-<section id="back_but_list">
-    <p class="back_but" style="font-size: 120%; 
-bottom: 3rem;  left:50%"><b><a href="/">back
-            </a></b>
-    </p>
-</section>
 {%endblock%}
