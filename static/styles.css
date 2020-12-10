@@ -1,4 +1,6 @@
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -7,25 +9,19 @@ body {
     background-color: #D2D5E4;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
-
-        
-    padding: 1rem;
 }
 
-main {
-    margin: 0.5rem;
-    padding: 0.5rem;
-}
 
-#cont{
+
+#cont {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     padding: 5rem;
     margin: 1rem;
-    
+
 }
 
-#pic{
+#pic {
     padding-top: 4.5rem;
     padding-bottom: 2rem;
     margin: 4.5rem;
@@ -52,9 +48,6 @@ main {
 
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     background-color: #656674;
     color: rgb(229, 236, 250);
@@ -64,12 +57,9 @@ footer {
 
 header {
 
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        background-color: #656674;
-        text-align: center;
+    width: 100%;
+    background-color: #656674;
+    text-align: center;
 }
 
 
@@ -77,16 +67,18 @@ h1 {
     color: #e9e9fc;
 }
 
- h2, h3, h4 {
+h2,
+h3,
+h4 {
     color: #62636d;
 }
 
-a{
+a {
     color: #ff65e5;
 }
 
-a:hover{
-    
+a:hover {
+
     color: #e9e9fc;
 }
 
@@ -97,14 +89,14 @@ a:hover{
 
 
 
-p{
+p {
     font-size: 125%;
     color: #62636d;
 }
 
 
 
-.list_links{
+.list_links {
     color: #9a28c7;
     padding-bottom: 2rem;
 }
