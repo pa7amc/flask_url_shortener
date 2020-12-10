@@ -30,32 +30,23 @@
     </header>
 
 
-    <div id="cont">
 
 
-        <main>
+    <main>
 
-            <section id="pic">
-                <img class="bgpic" src="{{ url_for('static', filename = 'imgs/SUSP.png') }}" alt="logo" />
-            </section>
+        <section id="cont">
+            <img class="bgpic" src="{{ url_for('static', filename = 'imgs/SUSP.png') }}" alt="logo" />
 
 
-            <section id="folia">
-                <!-- folia from initial FOrm, LIst of links and Adding a url-->
-
+            <div class="conts">
                 {%block content%} {%endblock%}
 
+            </div>
 
+        </section>
 
+    </main>
 
-            </section>
-
-            {%block back%} {%endblock%}
-
-
-        </main>
-
-    </div>
 
     <footer>
         <a href="https://pa7amc.github.io/" class="mypage">

@@ -12,51 +12,19 @@ body {
 }
 
 
-
-#cont {
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 5rem;
-    margin: 1rem;
-
-}
-
-#pic {
-    padding-top: 4.5rem;
-    padding-bottom: 2rem;
-    margin: 4.5rem;
-
-}
-
-
-.url {
-    padding: 0.15rem;
-    border-radius: 0.5rem;
-    margin: 0.6rem;
-}
-
-.sub {
-    border-radius: 0.5rem;
-    margin: 2rem;
-}
-
-.success {
-    padding-top: 1rem;
-    padding-bottom: 0rem;
-}
-
-
-
 footer {
     width: 100%;
     background-color: #656674;
     color: rgb(229, 236, 250);
     text-align: center;
-    font-size: 150%;
+    font-size: 125%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
 }
 
 header {
-
     width: 100%;
     background-color: #656674;
     text-align: center;
@@ -82,18 +50,61 @@ a:hover {
     color: #e9e9fc;
 }
 
-.key_p {
-    font-size: 140%;
-    color: #ae35df;
-}
-
-
-
 p {
     font-size: 125%;
     color: #62636d;
 }
 
+form {
+    text-align: center;
+    width: auto;
+}
+
+
+#cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+
+
+}
+
+.conts {
+    padding: 0 0 5rem 0;
+    text-align: center;
+}
+
+.bgpic {
+    padding: 2.5rem 0;
+}
+
+
+.url {
+    border-radius: 0.5rem;
+    width: auto;
+}
+
+.sub {
+    border-radius: 0.5rem;
+    margin: 2rem;
+    width: auto;
+}
+
+.success {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+}
+
+
+.key_p {
+    font-size: 140%;
+    color: #ae35df;
+}
 
 
 .list_links {
@@ -113,4 +124,12 @@ p {
 
 .links_h {
     padding: 1.5rem;
+}
+
+
+@media only screen and (max-width: 350px),
+screen and (orientation: portrait) {
+    .bgpic {
+        max-width: 100%;
+    }
 }
